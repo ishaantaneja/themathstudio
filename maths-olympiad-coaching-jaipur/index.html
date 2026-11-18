@@ -31,14 +31,19 @@
         "EducationalOrganization",
         "LocalBusiness"
       ],
-      "@id": "https://ishaantaneja.github.io/themathstudio/#organization",
+      "@id": "https://ishaantaneja.github.io/themathstudio/#org",
       "name": "The Math Studio",
-      "alternateName": "The Math Studio by Ishaan Taneja",
+      "alternateName": [
+        "The Math Studio by Ishaan Taneja",
+        "The Math Studio Jaipur",
+        "The Math Studio Raja Park",
+        "The Math Studio Ishaan Taneja"
+      ],
       "url": "https://ishaantaneja.github.io/themathstudio/",
       "logo": "https://ishaantaneja.github.io/themathstudio/assets/logo-full.png",
       "image": "https://ishaantaneja.github.io/themathstudio/assets/og-image.png",
       "email": "tanejaishaan3@gmail.com",
-      "telephone": "+91-9461259259",
+      "telephone": "+91 94612 59259",
       "priceRange": "₹2,499–₹4,499 per month",
       "address": {
         "@type": "PostalAddress",
@@ -48,11 +53,32 @@
         "postalCode": "302004",
         "addressCountry": "IN"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.8966025,
+        "longitude": 75.8270355
+      },
+      "hasMap": "https://www.google.com/maps/place/The+Math+Studio/@26.8966025,75.8270355,17z/data=!4m6!3m5!1s0x396db7911d755013:0xfc39455270734289!8m2!3d26.8966025!4d75.8270355!16s%2Fg%2F11_0b3km7d",
+      "sameAs": [
+        "https://maps.google.com/?cid=18174633991606583945",
+        "https://maps.app.goo.gl/aNHsXq2LkxxGLqxE6"
+      ],
       "openingHours": "Mo-Sa 08:00-20:00",
-      "hasMap": "https://www.google.com/maps/search/?api=1&query=The+Math+Studio,+Jamuna+Tower,+Govind+Marg,+Raja+Park,+Jaipur",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
       "founder": {
-        "@type": "Person",
-        "name": "Ishaan Taneja"
+        "@id": "https://ishaantaneja.github.io/themathstudio/about-ishaan-taneja/#person"
       }
     },
     {
@@ -62,7 +88,7 @@
       "name": "Maths Olympiad Coaching (IOQM, RMO, INMO) | The Math Studio by Ishaan Taneja",
       "description": "Maths Olympiad coaching in Jaipur for Classes 1–12: IOQM, RMO, INMO and school-level Olympiads. Batches of 10 or 1-on-1, led by Tr. Ishaan Taneja. 2 free demo classes.",
       "about": {
-        "@id": "https://ishaantaneja.github.io/themathstudio/#organization"
+        "@id": "https://ishaantaneja.github.io/themathstudio/#org"
       },
       "inLanguage": "en"
     },
@@ -214,7 +240,7 @@ footer{text-align:center;color:#86868b;font-size:13px;padding:40px 22px;border-t
   .stick .call{background:#1F3D2B}
   .stick .demo{background:#1d1d1f}
   body{padding-bottom:80px}
-  footer{padding-bottom:24px}
+  footer{padding-bottom:96px}
 }
 @media(prefers-reduced-motion:reduce){
   .sym,.curve path.c{animation:none;stroke-dashoffset:0}
@@ -244,13 +270,14 @@ footer .fbrand .byline{font-size:11.5px;letter-spacing:.1em}
 .wa-float{position:fixed;right:22px;bottom:22px;z-index:11;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(31,61,43,.28),0 0 0 3px rgba(255,249,235,.9);transition:transform .2s,box-shadow .2s}
 .wa-float:hover{transform:scale(1.07);box-shadow:0 14px 32px rgba(31,61,43,.34),0 0 0 3px rgba(255,249,235,.9)}
 .wa-float:focus-visible{outline:3px solid #C4983C;outline-offset:3px}
-@media(max-width:700px){.wa-float{right:16px;bottom:calc(78px + env(safe-area-inset-bottom));width:54px;height:54px}}
+@media(max-width:700px){.wa-float{right:16px;bottom:calc(88px + env(safe-area-inset-bottom));width:54px;height:54px}}
 @media print{.wa-float{display:none}}
 .landmark{font-size:14px;color:#6e6e73}
 .addr .landmark{margin-top:2px}
 .addr .btn{margin-top:18px}
 footer .faddr{font-style:normal;color:#515154;font-size:14px;line-height:1.55;margin:0 auto 12px;max-width:560px}
 footer .faddr .landmark{display:block;font-size:12.5px;color:#86868b;margin-top:2px}
+footer .fseo{font-size:12.5px;color:#86868b;margin:0 auto 8px;max-width:640px;line-height:1.45}
 footer .copy{font-size:13px;color:#86868b;margin:0 auto;max-width:none}
 .links{list-style:none;padding:0;margin:16px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
 .links a{display:block;background:#fff;border-radius:14px;padding:14px 18px;color:#1F3D2B;font-weight:600;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.04),0 6px 20px rgba(0,0,0,.04);border-left:3px solid #C4983C}
@@ -304,7 +331,7 @@ main .bands{margin-top:18px}
       <a class="brand" href="../">
         <picture>
           <source type="image/webp" srcset="../assets/logo-emblem-96.webp 96w, ../assets/logo-emblem-192.webp 192w" sizes="40px">
-          <img src="../assets/logo-emblem-96.png" srcset="../assets/logo-emblem-96.png 96w, ../assets/logo-emblem-192.png 192w" sizes="40px" width="40" height="40" alt="The Math Studio logo">
+          <img src="../assets/logo-emblem-96.png" srcset="../assets/logo-emblem-96.png 96w, ../assets/logo-emblem-192.png 192w" sizes="40px" width="40" height="40" alt="The Math Studio by Ishaan Taneja logo">
         </picture>
         <span class="brand-lockup"><b>The Math Studio</b><span class="byline">by Ishaan Taneja</span></span>
       </a>
@@ -329,7 +356,7 @@ main .bands{margin-top:18px}
   <p class="crumb"><a href="../">Home</a> › <a href="../#classes">Classes</a></p>
   <picture>
     <source type="image/webp" srcset="../assets/logo-emblem-192.webp">
-    <img class="emb" src="../assets/logo-emblem-192.png" width="84" height="84" alt="The Math Studio logo">
+    <img class="emb" src="../assets/logo-emblem-192.png" width="84" height="84" alt="The Math Studio by Ishaan Taneja logo">
   </picture>
   <div class="eyebrow">Classes 1–12 · Olympiad preparation</div>
   <h1>Maths Olympiad Coaching (IOQM, RMO, INMO)</h1>
@@ -467,6 +494,7 @@ main .bands{margin-top:18px}
   </nav>
   <address class="faddr">Second Floor, 13, Jamuna Tower, 214, Govind Marg, Raja Park, Jaipur, Rajasthan 302004<span class="landmark">Near Hyundai Showroom</span></address>
   <p class="fbrand"><b>The Math Studio</b><span class="byline">by Ishaan Taneja</span></p>
+  <p class="fseo">The Math Studio by Ishaan Taneja, maths coaching in Raja Park, Jaipur</p>
   <p class="copy">© 2026 The Math Studio · Raja Park, Jaipur, Rajasthan</p>
 </footer>
 
