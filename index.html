@@ -222,9 +222,8 @@ p{color:#3a3a3c;font-size:18px;max-width:720px}
 .stats span{color:#6e6e73;font-size:15px}
 .founder{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center}
 @media(max-width:700px){.founder{grid-template-columns:1fr}}
-.avatar{aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,#F3E8C8,#E8EFE4);display:flex;align-items:center;justify-content:center;font-size:72px;font-weight:700;color:#1F3D2B;letter-spacing:-.03em;position:relative;overflow:hidden;border:3px solid #C4983C;box-shadow:0 8px 28px rgba(31,61,43,.12)}
+.avatar{aspect-ratio:1;border-radius:28px;background:linear-gradient(135deg,#F3E8C8,#E8EFE4);display:flex;align-items:center;justify-content:center;font-size:72px;font-weight:700;color:#1F3D2B;letter-spacing:-.03em;position:relative;overflow:hidden}
 .avatar svg{position:absolute;inset:0;width:100%;height:100%;opacity:.35}
-.avatar picture,.avatar img{position:relative;width:78%;height:auto;display:block}
 .sig{margin-top:14px;color:#6e6e73;font-size:15px}
 .sym{position:absolute;font-family:Georgia,serif;color:#C4983C;opacity:.22;font-size:56px;animation:fl 9s ease-in-out infinite;pointer-events:none;user-select:none}
 @keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-22px) rotate(8deg)}}
@@ -353,7 +352,7 @@ footer .flink a:hover{text-decoration:underline}
       <input type="checkbox" id="nm">
       <label class="hb" for="nm" aria-label="Menu"><i></i></label>
       <span class="l">
-        <a href="about-ishaan-taneja/">About Ishaan</a>
+        <a href="#founder">Founder</a>
         <a href="#why">Why us</a>
         <a href="#classes">Classes</a>
         <a href="#fees">Fees</a>
@@ -407,10 +406,8 @@ footer .flink a:hover{text-decoration:underline}
 <section class="rv" id="founder">
   <div class="founder">
     <div class="avatar">
-      <picture>
-        <source type="image/webp" srcset="assets/logo-emblem-192.webp">
-        <img src="assets/logo-emblem-192.png" width="192" height="192" alt="The Math Studio logo">
-      </picture>
+      <svg viewBox="0 0 200 200" aria-hidden="true"><g stroke="#1F3D2B" fill="none"><circle cx="100" cy="100" r="70"/><polygon points="100,30 160,135 40,135"/><line x1="30" y1="100" x2="170" y2="100"/></g></svg>
+      <span style="position:relative">IT</span>
     </div>
     <div>
       <div class="eyebrow">Meet the founder</div>
@@ -418,7 +415,6 @@ footer .flink a:hover{text-decoration:underline}
       <p>An engineer who chose the classroom. Ishaan cracked IIT JEE Advanced, studied Computer Science at Manipal with four years of collegiate mathematics, and has since taught math from Grade 1 to Grade 12 to students in India, Australia, the UK, the US, Canada, Hong Kong and beyond.</p>
       <p style="margin-top:14px">He secured All India Rank 7041 in IIT JEE Advanced. His students rate him 4.8 out of 5, and his teaching earned the Best Performer Award in 2025. The Math Studio brings that same world-class teaching to Raja Park, Jaipur.</p>
       <div class="sig">Founder &amp; Lead Mathematics Teacher</div>
-      <a class="btn alt" href="about-ishaan-taneja/">About Ishaan</a>
     </div>
   </div>
 </section>
